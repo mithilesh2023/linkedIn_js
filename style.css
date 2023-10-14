@@ -88,12 +88,11 @@ ul li  img{
     height: 100vh;
     width: 20%;
     margin-left: 45px;
-    overflow-y: scroll;   
+    /* overflow-y: scroll;    */
+    position: sticky;
 
 }
-.sidebar::-webkit-scrollbar{
-    display: none;
-}
+
 #user{
     width: 100%;
     height: 350px;
@@ -101,7 +100,6 @@ ul li  img{
 }
 .user{
     width: 100%;
-    /* margin-left: 60px; */
     border: 1px solid black;
     background-image: url(images/cover-pic.png);
     background-position: center;
@@ -155,7 +153,6 @@ h3{
     width: 100%;
     display: flex;
     justify-content: center;
-    /* gap: 20px; */
    
 }
 .line{
@@ -164,8 +161,7 @@ h3{
     margin-top: 4px;
 }
 .primium img{
-    width:28px;
-    /* margin-right:-5px; */
+    width:20px;
     margin-top: -5px;
 
 }
@@ -173,7 +169,8 @@ h3{
     color: rgb(101, 99, 99);
     gap:10px;
     margin-top:15px;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 600;
 
 }
 .recent{
@@ -183,7 +180,7 @@ h3{
     padding: 10px 20px;
     color:rgb(101, 99, 99) ;
 }
-.recent ul {
+.recent ul  {
     flex-direction: column;
 }
 .recent ul li a{
@@ -191,6 +188,10 @@ h3{
     margin-left: 10px;
     color: rgb(101, 99, 99);
     font-weight: 600;
+    font-size: 15px;
+}
+.recent ul li img{
+    width: 25px;
 }
 .discover{
     text-align: center;
@@ -204,14 +205,174 @@ h3{
 /* --------------center---------------- */
 
 .center{
-    width: 40%;
+width: 45%;
+margin-left: 10px;
+position: sticky;
+    
+}
+.post{
+    width: 100%;
+    background-color: white;
+}
+.user-post{
+    display: flex;
+    padding: 10px;
+
+}
+
+.post img{
+    width:50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+.post input{
+    width: 480px;
+    border-radius: 40px;
+    border: 1px solid gray;
+}
+.media {
+    display: flex;
+    border-top: 1px solid gray;
+}
+.media div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.media div img{
+    width: 30px;
+}
+.hr{
+width: 1px;
+height: 40px;
+border: 1px solid gray;
+}
+
+.post button{
+    background-color: blue;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    width: 30%;
+}
+.user-center{
+    background-color: white;
+} 
+.user-1{
+  display: flex;
+  padding:15px 3px;
+}
+.user-1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.user-1 div{
+    margin-left: 10px;
+}
+.user-1 div p{
+    color:rgba(101, 99, 99, 0.808) ;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user-post-1 img{
+    width: 100%;
+    padding-inline:20px;
+    
+}
+.user-post-1 p{
+    padding: 0 20px;
 }
 /* -----------right side ------------*/
 
 .right-side{
     width: 25%;
     margin-inline:30px;
+    /* position:sticky;
+    top: 70px; */
+}
+
+.trending{
+    background-color: white;
+    padding: 6px;
+}
+.trending h3{
+    color:rgb(101, 99, 99);
+}
+
+.trending ul{
+    flex-direction: column;
+}
+.trending ul li{
+    flex-direction: column;
+    color: rgb(122, 118, 118);
+    font-weight: bold;
+    font-size: 18px;
+}
+.trending ul li p{
+    color:rgba(101, 99, 99, 0.747);
+    font-size: 14px;
+}
+.trending a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(80, 80, 191, 0.836);
+    padding: 8px;
+}
+
+.ad{
+    background-color: white;
+    text-align: center;
+    color:rgba(101, 99, 99, 0.747) ;
+    font-weight: 600;
+    padding: 10px;
+    line-height: 40px;
+    margin-top: 18px;
+}
+.ad span{
+    float: right;
+    margin-right: 30px;
+}
+.ad img{
+    width: 50px;
+    border-radius: 50%;
+}
+.ad button{
+    width: 120px;
+    padding:10px;
+    font-weight: 600;
+    color:rgb(74, 72, 72) ;
+    border-radius: 40px;
+    border:2px solid gray;
+}
+.link{
+    text-align: center;
+    padding: 5px;
+    line-height: 30px;
+}
+.link a{
+    color:rgb(101, 99, 99);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1px;
 
 }
+.link p{
+    display: flex;
+    font-size: 14px;
+    color: rgba(78, 77, 77, 0.9);
+   
+}
+.link p img{
+    width: 40px;
+    margin-right: 5px;
+}
+
+
 
 
